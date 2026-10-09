@@ -1,0 +1,312 @@
+/* MAMBO GROUP · couleurs et polices de la charte graphique v1 (octobre 2026) */
+:root {
+  --vert-mambo: #1F5130;
+  --vert-pousse: #7BB13C;
+  --ocre-recolte: #C9862B;
+  --brun-terre: #5A3A22;
+  --blanc-manioc: #F7F5EF;
+  --charbon: #1E2622;
+  --blanc: #FFFFFF;
+
+  --font-titre: "Poppins", Arial, sans-serif;
+  --font-texte: "Source Sans 3", Arial, sans-serif;
+
+  --radius: 12px;
+  --container: 1120px;
+
+  /* Motif feuille du logo, en filigrane */
+  --motif-feuille: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='%23ffffff' fill-opacity='0.06'%3E%3Cpath d='M16 4c6 6 6 18 0 24-6-6-6-18 0-24Z'/%3E%3Cpath d='M48 36c6 6 6 18 0 24-6-6-6-18 0-24Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body {
+  margin: 0;
+  font-family: var(--font-texte);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--charbon);
+  background: var(--blanc-manioc);
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+h1, h2, h3 {
+  font-family: var(--font-titre);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--vert-mambo);
+  margin: 0 0 .5em;
+}
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.25rem); }
+h3 { font-size: 1.15rem; font-weight: 600; }
+
+p { margin: 0 0 1em; }
+
+a { color: var(--vert-mambo); }
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute; left: 16px; top: -48px; z-index: 100;
+  background: var(--vert-mambo); color: var(--blanc);
+  padding: 8px 16px; border-radius: 6px;
+}
+.skip-link:focus { top: 16px; }
+
+:focus-visible { outline: 3px solid var(--vert-pousse); outline-offset: 2px; }
+
+/* Libellés : majuscules réservées aux courts libellés */
+.label {
+  font-family: var(--font-titre);
+  font-weight: 600;
+  font-size: .8rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--vert-mambo);
+  margin-bottom: .75em;
+  display: flex; align-items: center; gap: 10px;
+}
+.label::before {
+  content: ""; width: 28px; height: 3px; border-radius: 2px;
+  background: var(--vert-pousse);
+}
+.hero .label { color: rgba(255,255,255,.85); }
+
+.intro { max-width: 680px; font-size: 1.125rem; }
+.lead { font-size: 1.2rem; max-width: 560px; }
+
+/* Boutons : vert pousse pour l'accent */
+.btn {
+  display: inline-block;
+  font-family: var(--font-titre);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--charbon);
+  background: var(--vert-pousse);
+  border: 2px solid var(--vert-pousse);
+  padding: 12px 24px;
+  border-radius: 999px;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.btn:hover { background: #8CC24B; border-color: #8CC24B; }
+.btn-ghost { background: transparent; color: var(--blanc); border-color: rgba(255,255,255,.6); }
+.btn-ghost:hover { background: rgba(255,255,255,.1); border-color: var(--blanc); }
+.btn-small { padding: 8px 18px; font-size: .95rem; }
+
+/* Icônes : trait arrondi de 2 px */
+.icon {
+  width: 40px; height: 40px;
+  fill: none;
+  stroke: var(--vert-mambo);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  margin-bottom: 12px;
+}
+
+/* En-tête */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--blanc);
+  border-bottom: 1px solid rgba(31,81,48,.12);
+}
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 68px;
+}
+.brand {
+  display: flex; align-items: center; gap: 12px;
+  text-decoration: none;
+  font-family: var(--font-titre); font-weight: 700; font-size: 1.15rem;
+  letter-spacing: .04em;
+  color: var(--vert-mambo);
+}
+.site-nav { display: flex; align-items: center; gap: 28px; }
+.site-nav a:not(.btn) {
+  font-family: var(--font-titre); font-weight: 600; font-size: .95rem;
+  text-decoration: none; color: var(--charbon);
+}
+.site-nav a:not(.btn):hover { color: var(--vert-mambo); }
+
+.nav-toggle {
+  display: none;
+  background: none; border: 0; padding: 8px; cursor: pointer;
+}
+.nav-toggle svg { stroke: var(--vert-mambo); stroke-width: 2; stroke-linecap: round; fill: none; }
+
+/* Héros : vert MAMBO + motif feuille */
+.hero {
+  background-color: var(--vert-mambo);
+  background-image: var(--motif-feuille);
+  color: var(--blanc);
+  padding: 88px 0;
+}
+.hero h1 { color: var(--blanc); }
+.hero .lead { color: rgba(255,255,255,.88); }
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.hero-logo { justify-self: center; }
+.hero-logo img { width: 300px; }
+
+/* Sections */
+.section { padding: 88px 0; }
+.section-tint { background: var(--blanc); }
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.value {
+  border-top: 4px solid var(--vert-pousse);
+  padding-top: 20px;
+}
+.value p { margin: 0; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.card {
+  background: var(--blanc-manioc);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+.card p { margin: 0; }
+.card-accent { background: var(--ocre-recolte); color: var(--charbon); }
+.card-accent h3 { color: var(--charbon); }
+.card-accent .icon { stroke: var(--charbon); }
+.card-accent .link {
+  display: inline-block; margin-top: 12px;
+  color: var(--charbon); font-weight: 600;
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.brand-card {
+  background: var(--blanc);
+  border: 1px solid rgba(31,81,48,.15);
+  border-radius: var(--radius);
+  padding: 28px;
+  display: flex; flex-direction: column;
+}
+.brand-name {
+  font-family: var(--font-titre); font-weight: 700; font-size: 1.5rem;
+  color: var(--charbon);
+  margin-bottom: .25em;
+}
+.brand-card .signature {
+  margin: auto 0 0;
+  padding-top: 20px;
+  font-size: .85rem; font-weight: 600;
+  color: var(--vert-mambo);
+}
+.brand-card-future { border-style: dashed; background: transparent; }
+.brand-card-future .brand-name { color: var(--vert-mambo); }
+
+/* Contact : brun terre, fond premium */
+.section-contact {
+  background: var(--brun-terre);
+  color: var(--blanc);
+}
+.section-contact h2 { color: var(--blanc); }
+.section-contact .label { color: rgba(255,255,255,.85); }
+.section-contact .label::before { background: var(--ocre-recolte); }
+.section-contact .lead { color: rgba(255,255,255,.85); }
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.contact-list { list-style: none; margin: 0; padding: 0; }
+.contact-list li {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+  font-size: 1.1rem;
+}
+.contact-list .icon { stroke: var(--ocre-recolte); width: 28px; height: 28px; margin: 0; flex: none; }
+.contact-list .todo { font-style: italic; color: rgba(255,255,255,.65); }
+
+/* Pied de page : bande verte */
+.site-footer {
+  background: var(--vert-mambo);
+  background-image: var(--motif-feuille);
+  color: rgba(255,255,255,.85);
+  padding: 48px 0 32px;
+}
+.footer-inner {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 32px;
+}
+.footer-inner img { width: 120px; }
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 24px; }
+.site-footer nav a { color: var(--blanc); text-decoration: none; font-weight: 600; }
+.site-footer nav a:hover { text-decoration: underline; }
+.copyright { width: 100%; margin: 16px 0 0; font-size: .9rem; color: rgba(255,255,255,.7); }
+
+/* Tablette */
+@media (max-width: 960px) {
+  .values { grid-template-columns: repeat(2, 1fr); }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  .container { padding: 0 16px; }
+  .section, .hero { padding: 64px 0; }
+
+  .nav-toggle { display: block; }
+  .site-nav {
+    display: none;
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; align-items: stretch; gap: 0;
+    background: var(--blanc);
+    border-bottom: 1px solid rgba(31,81,48,.12);
+    padding: 8px 16px 16px;
+  }
+  .site-nav.is-open { display: flex; }
+  .site-nav a:not(.btn) { padding: 12px 0; border-bottom: 1px solid rgba(31,81,48,.08); }
+  .site-nav .btn { margin-top: 12px; text-align: center; }
+
+  .hero-inner, .contact-inner { grid-template-columns: 1fr; }
+  .hero-logo { order: -1; justify-self: start; }
+  .hero-logo img { width: 140px; }
+
+  .values, .cards, .brands { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
