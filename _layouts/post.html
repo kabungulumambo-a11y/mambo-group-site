@@ -1,0 +1,30 @@
+---
+layout: default
+---
+    <article class="post">
+      <header class="page-hero">
+        <div class="container container-narrow">
+          <a href="/actualites/" class="back-link">Toutes les actualités</a>
+          <p class="news-meta news-meta-light">
+            {%- if page.categorie %}<span class="news-tag">{{ page.categorie }}</span>{% endif %}
+            {% include date-fr.html date=page.date %}
+          </p>
+          <h1>{{ page.title }}</h1>
+          {%- if page.resume %}
+          <p class="lead">{{ page.resume }}</p>
+          {%- endif %}
+        </div>
+      </header>
+
+      <div class="section post-section">
+        <div class="container container-narrow">
+          {%- if page.image %}
+          <img class="post-image" src="{{ page.image }}" alt="{{ page.image_alt | default: '' }}">
+          {%- endif %}
+          <div class="post-content">
+{{ content }}
+          </div>
+          <p class="post-contact">Une question sur cette actualité ? Écrivez-nous à <a href="mailto:info@mambogroup-rdc.com">info@mambogroup-rdc.com</a>.</p>
+        </div>
+      </div>
+    </article>

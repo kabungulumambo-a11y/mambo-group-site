@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- if page.title %}
+  <title>{{ page.title }} · MAMBO GROUP</title>
+  {%- else %}
+  <title>MAMBO GROUP · Groupe agroalimentaire en RDC</title>
+  {%- endif %}
+  {%- assign description = page.resume | default: site.description %}
+  <meta name="description" content="{{ description | strip_html | escape }}">
+  <meta name="theme-color" content="#1F5130">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="{{ page.title | default: 'MAMBO GROUP · Groupe agroalimentaire en RDC' | escape }}">
+  <meta property="og:description" content="{{ description | strip_html | escape }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ page.image | default: '/assets/img/og-image.jpg' }}">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="MAMBO GROUP, retour à l'accueil">
+        <img src="/assets/img/symbole-mambo.png" alt="" width="44" height="38">
+        <span>MAMBO GROUP</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="sr-only">Ouvrir le menu</span>
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav id="menu" class="site-nav" aria-label="Navigation principale">
+        <a href="/#groupe">Le groupe</a>
+        <a href="/#activites">Activités</a>
+        <a href="/#marques">Marques</a>
+        <a href="/actualites/"{% if page.url contains '/actualites/' %} aria-current="page"{% endif %}>Actualités</a>
+        <a href="/#contact" class="btn btn-small">Nous contacter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+{{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="/assets/img/logo-mambo-group-blanc.png" alt="MAMBO GROUP" width="120" height="136">
+      <nav aria-label="Pied de page">
+        <a href="/#groupe">Le groupe</a>
+        <a href="/#activites">Activités</a>
+        <a href="/#marques">Marques</a>
+        <a href="/actualites/">Actualités</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="annee">{{ site.time | date: "%Y" }}</span> MAMBO GROUP · Kinshasa, RDC</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

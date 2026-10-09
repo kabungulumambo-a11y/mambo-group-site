@@ -15,4 +15,5 @@ menu.addEventListener('click', (event) => {
 });
 
 // Année du pied de page
-document.getElementById('annee').textContent = new Date().getFullYear();
+const annee = document.getElementById('annee');
+if (annee) annee.textContent = new Date().getFullYear();

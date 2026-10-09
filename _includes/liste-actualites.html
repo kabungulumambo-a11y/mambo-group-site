@@ -1,0 +1,29 @@
+{%- if include.limite -%}
+  {%- assign articles = site.posts | slice: 0, include.limite -%}
+{%- else -%}
+  {%- assign articles = site.posts -%}
+{%- endif -%}
+{%- if articles.size > 0 %}
+<div class="news-grid">
+  {%- for article in articles %}
+  <article class="news-card">
+    {%- if article.image %}
+    <a href="{{ article.url }}" class="news-image" tabindex="-1" aria-hidden="true">
+      <img src="{{ article.image }}" alt="" loading="lazy">
+    </a>
+    {%- endif %}
+    <div class="news-body">
+      <p class="news-meta">
+        {%- if article.categorie %}<span class="news-tag">{{ article.categorie }}</span>{% endif %}
+        {% include date-fr.html date=article.date %}
+      </p>
+      <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+      <p>{{ article.resume | default: article.excerpt | strip_html | truncatewords: 30 }}</p>
+      <a href="{{ article.url }}" class="link-arrow" aria-label="Lire l'article : {{ article.title | escape }}">Lire l'article</a>
+    </div>
+  </article>
+  {%- endfor %}
+</div>
+{%- else %}
+<p class="news-empty">Les premières actualités du groupe arrivent bientôt.</p>
+{%- endif %}

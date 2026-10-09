@@ -1,49 +1,6 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MAMBO GROUP · Groupe agroalimentaire en RDC</title>
-  <meta name="description" content="MAMBO GROUP produit, conditionne, transporte et commercialise des produits agroalimentaires en République démocratique du Congo.">
-  <meta name="theme-color" content="#1F5130">
-
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="MAMBO GROUP · Groupe agroalimentaire en RDC">
-  <meta property="og:description" content="Production, conditionnement, trading et logistique agroalimentaires en RDC.">
-  <meta property="og:image" content="assets/img/og-image.jpg">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#accueil" aria-label="MAMBO GROUP, retour à l'accueil">
-        <img src="assets/img/symbole-mambo.png" alt="" width="44" height="38">
-        <span>MAMBO GROUP</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
-        <span class="sr-only">Ouvrir le menu</span>
-        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-      <nav id="menu" class="site-nav" aria-label="Navigation principale">
-        <a href="#groupe">Le groupe</a>
-        <a href="#activites">Activités</a>
-        <a href="#marques">Marques</a>
-        <a href="#contact" class="btn btn-small">Nous contacter</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="contenu">
+---
+layout: default
+---
     <section id="accueil" class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
@@ -51,12 +8,12 @@
           <h1>Nourrir le Congo, de la production à la livraison.</h1>
           <p class="lead">MAMBO GROUP produit, conditionne, transporte et commercialise des produits agroalimentaires en République démocratique du Congo.</p>
           <div class="hero-actions">
-            <a href="#activites" class="btn">Découvrir nos activités</a>
-            <a href="#contact" class="btn btn-ghost">Devenir partenaire</a>
+            <a href="/#activites" class="btn">Découvrir nos activités</a>
+            <a href="/#contact" class="btn btn-ghost">Devenir partenaire</a>
           </div>
         </div>
         <div class="hero-logo">
-          <img src="assets/img/logo-mambo-group-blanc.png" alt="Logo MAMBO GROUP" width="480" height="545">
+          <img src="/assets/img/logo-mambo-group-blanc.png" alt="Logo MAMBO GROUP" width="480" height="545">
         </div>
       </div>
     </section>
@@ -128,7 +85,7 @@
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
             <h3>Nouvelles filières</h3>
             <p>Le groupe se diversifie dans l'agroalimentaire. Vous avez un projet ? Parlons-en.</p>
-            <a href="#contact" class="link">Nous écrire</a>
+            <a href="/#contact" class="link">Nous écrire</a>
           </article>
         </div>
       </div>
@@ -160,6 +117,19 @@
       </div>
     </section>
 
+    <section id="actualites" class="section section-tint">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="label">Actualités</p>
+            <h2>Les dernières nouvelles du groupe</h2>
+          </div>
+          <a href="/actualites/" class="link-arrow">Toutes les actualités</a>
+        </div>
+        {% include liste-actualites.html limite=3 %}
+      </div>
+    </section>
+
     <section id="contact" class="section section-contact">
       <div class="container contact-inner">
         <div>
@@ -184,21 +154,3 @@
         </ul>
       </div>
     </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <img src="assets/img/logo-mambo-group-blanc.png" alt="MAMBO GROUP" width="120" height="136">
-      <nav aria-label="Pied de page">
-        <a href="#groupe">Le groupe</a>
-        <a href="#activites">Activités</a>
-        <a href="#marques">Marques</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <p class="copyright">© <span id="annee">2026</span> MAMBO GROUP · Kinshasa, RDC</p>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
