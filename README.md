@@ -4,24 +4,46 @@ Site vitrine de MAMBO GROUP, groupe agroalimentaire en République démocratique
 
 ## Structure
 
-- `index.html` : la page unique du site (Le groupe, Activités, Marques, Contact).
+- `index.html` : la page d'accueil (Le groupe, Activités, Marques, Actualités, Contact).
+- `actualites/index.html` : la liste de toutes les actualités.
+- `_posts/` : une actualité par fichier Markdown.
+- `_layouts/` : gabarits communs (`default.html` pour l'en-tête et le pied de page, `post.html` pour un article).
+- `_includes/` : liste des actualités et date en français.
 - `assets/css/style.css` : couleurs et polices de la charte graphique v1.
 - `assets/js/main.js` : menu mobile.
 - `assets/img/` : logos (couleur, blanc, symbole seul), favicon et image de partage.
 
-Le site est en HTML et CSS simples, sans outil de compilation.
+Le site est construit par Jekyll, directement par GitHub Pages.
+
+## Ajouter une actualité
+
+Créer `_posts/AAAA-MM-JJ-titre-court.md` :
+
+```markdown
+---
+title: Titre de l'actualité
+categorie: Partenariat
+resume: Une ou deux phrases affichées sur la carte et sous le titre.
+image: /assets/img/actualites/photo.jpg   # facultatif
+---
+
+Texte de l'article en Markdown.
+```
+
+Les trois plus récentes apparaissent sur l'accueil.
 
 ## Voir le site en local
 
 ```sh
-python3 -m http.server 8000
+gem install jekyll
+jekyll serve
 ```
 
-Puis ouvrir http://localhost:8000.
+Puis ouvrir http://localhost:4000.
 
-## Mettre en ligne avec GitHub Pages
+## Mise en ligne
 
-Dans le dépôt : Settings → Pages → Source « Deploy from a branch », branche `main`, dossier `/ (root)`.
+GitHub Pages publie la branche `main` (dossier racine) sur https://mambogroup-rdc.com (fichier `CNAME`).
 
 ## Charte graphique
 
