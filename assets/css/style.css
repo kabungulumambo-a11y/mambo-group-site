@@ -103,7 +103,7 @@ a { color: var(--vert-mambo); }
   border: 2px solid var(--vert-pousse);
   padding: 12px 24px;
   border-radius: 999px;
-  transition: background .2s, color .2s, border-color .2s;
+  transition: background .2s, color .2s, border-color .2s, transform .2s;
 }
 .btn:hover { background: #8CC24B; border-color: #8CC24B; }
 .btn-ghost { background: transparent; color: var(--blanc); border-color: rgba(255,255,255,.6); }
@@ -411,3 +411,37 @@ a { color: var(--vert-mambo); }
 
 .contact-list a { color: var(--blanc); text-decoration: underline; text-underline-offset: 3px; }
 .contact-list a:hover { color: var(--vert-pousse); }
+
+/* Animations */
+.site-header { transition: box-shadow .25s; }
+.site-header.is-scrolled { box-shadow: 0 6px 20px rgba(30,38,34,.10); }
+
+.hero-text > * { animation: monter .7s ease-out both; }
+.hero-text > :nth-child(2) { animation-delay: .1s; }
+.hero-text > :nth-child(3) { animation-delay: .2s; }
+.hero-text > :nth-child(4) { animation-delay: .3s; }
+.hero-logo img { animation: apparaitre .9s ease-out .2s both, flotter 6s ease-in-out 1.2s infinite; }
+
+@keyframes monter { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes apparaitre { from { opacity: 0; transform: scale(.92); } to { opacity: 1; transform: none; } }
+@keyframes flotter { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+.card, .value, .brand-card, .news-card { transition: transform .25s, box-shadow .25s; }
+.card:hover, .brand-card:hover, .news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(30,38,34,.12);
+}
+.card-media { transition: transform .5s; }
+.card:hover .card-media { transform: scale(1.05); }
+.value .icon { transition: transform .3s; }
+.value:hover .icon { transform: scale(1.15) rotate(-6deg); }
+.btn:hover { transform: translateY(-2px); }
+
+/* Apparition au défilement (activée par main.js) */
+.js .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease-out, transform .6s ease-out; }
+.js .reveal.is-visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; }
+  .js .reveal { opacity: 1; transform: none; }
+}
