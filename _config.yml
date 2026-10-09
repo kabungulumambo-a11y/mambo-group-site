@@ -3,7 +3,7 @@ title: MAMBO GROUP
 description: MAMBO GROUP produit, conditionne, transporte et commercialise des produits agroalimentaires en République démocratique du Congo.
 url: https://mambogroup-rdc.com
 lang: fr
-timezone: Africa/Kinshasa
+timezone: Africa/Lubumbashi
 
 permalink: /actualites/:year/:month/:title/
 markdown: kramdown
