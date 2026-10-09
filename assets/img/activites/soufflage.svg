@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" role="img" aria-label="Bouteilles personnalisées">
+<rect width="400" height="225" fill="#1F5130"/><rect y="185" width="400" height="40" fill="#1E2622" opacity=".35"/>
+<g fill="#F7F5EF" opacity=".95">
+<path d="M90 185v-80c0-15 12-22 12-35v-12h16v12c0 13 12 20 12 35v80Z"/>
+<path d="M170 185v-95c0-18 14-26 14-40v-14h20v14c0 14 14 22 14 40v95Z"/>
+<path d="M258 185v-70c0-13 10-19 10-30v-10h14v10c0 11 10 17 10 30v70Z"/></g>
+<rect x="100" y="52" width="20" height="8" fill="#C9862B"/><rect x="182" y="28" width="24" height="10" fill="#C9862B"/><rect x="266" y="69" width="18" height="8" fill="#C9862B"/>
+<rect x="90" y="130" width="40" height="22" fill="#7BB13C"/><rect x="170" y="125" width="48" height="26" fill="#C9862B"/><rect x="258" y="135" width="34" height="20" fill="#7BB13C"/>
+<path d="M330 185v-40l6-10h10l6 10v40Z" fill="#7BB13C" opacity=".5"/>
+</svg>

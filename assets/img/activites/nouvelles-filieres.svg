@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" role="img" aria-label="Champ cultivé et jeunes pousses">
+<rect width="400" height="225" fill="#C9862B"/><circle cx="320" cy="60" r="30" fill="#F7F5EF" opacity=".5"/>
+<path d="M0 150c80-20 160-25 240-15s120 10 160 5v85H0Z" fill="#5A3A22"/>
+<g stroke="#1E2622" stroke-width="2" opacity=".25"><path d="M0 175c120-18 260-18 400-20M0 200c120-16 260-16 400-18"/></g>
+<g fill="none" stroke="#1F5130" stroke-width="4" stroke-linecap="round"><path d="M80 160v-35M160 155v-45M240 152v-38M320 150v-32"/></g>
+<g fill="#7BB13C"><path d="M80 130c0-14 10-22 24-22 0 14-10 22-24 22Z"/><path d="M80 138c0-12-9-19-20-19 0 12 9 19 20 19Z"/><path d="M160 118c0-16 12-26 28-26 0 16-12 26-28 26Z"/><path d="M160 128c0-14-10-22-24-22 0 14 10 22 24 22Z"/><path d="M240 120c0-14 10-22 24-22 0 14-10 22-24 22Z"/><path d="M320 124c0-12 9-19 20-19 0 12-9 19-20 19Z"/></g>
+</svg>

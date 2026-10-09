@@ -196,6 +196,16 @@ a { color: var(--vert-mambo); }
   background: var(--blanc-manioc);
   border-radius: var(--radius);
   padding: 28px;
+  overflow: hidden;
+}
+.card-media {
+  display: block;
+  width: calc(100% + 56px);
+  max-width: none;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  margin: -28px -28px 20px;
 }
 .card p { margin: 0; }
 .card-accent { background: var(--ocre-recolte); color: var(--charbon); }

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" role="img" aria-label="Cartons et sacs conditionnés sur palette">
+<rect width="400" height="225" fill="#F7F5EF"/><rect y="190" width="400" height="35" fill="#E4EDD8"/>
+<rect x="70" y="176" width="260" height="14" fill="#5A3A22"/><rect x="80" y="190" width="18" height="10" fill="#5A3A22"/><rect x="191" y="190" width="18" height="10" fill="#5A3A22"/><rect x="302" y="190" width="18" height="10" fill="#5A3A22"/>
+<rect x="80" y="116" width="78" height="60" fill="#C9862B"/><rect x="161" y="116" width="78" height="60" fill="#C9862B"/><rect x="242" y="116" width="78" height="60" fill="#C9862B"/>
+<rect x="120" y="56" width="78" height="60" fill="#C9862B"/><rect x="201" y="56" width="78" height="60" fill="#C9862B"/>
+<path d="M119 116v-60M200 56v60M240 116v60M159 116v60M281 116v60M320 116" stroke="#5A3A22" stroke-width="2" opacity=".35"/>
+<g fill="#1F5130"><rect x="104" y="136" width="30" height="20" rx="3"/><rect x="185" y="136" width="30" height="20" rx="3"/><rect x="266" y="136" width="30" height="20" rx="3"/><rect x="144" y="76" width="30" height="20" rx="3"/><rect x="225" y="76" width="30" height="20" rx="3"/></g>
+<path d="M340 176c0-40 10-60 25-60s25 20 25 60Z" fill="#7BB13C"/><path d="M352 120l13-10 13 10" stroke="#1F5130" stroke-width="4" fill="none"/>
+</svg>
