@@ -60,6 +60,5 @@ Polices : Poppins (titres) et Source Sans 3 (textes), chargées depuis Google Fo
 
 ## À compléter
 
-- Téléphone du groupe (section Contact de `index.html`).
 - Logos des marques Conso-Aqua et Rozana.
 - Photos (lumière naturelle, équipes au travail, usines et produits en RDC).

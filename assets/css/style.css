@@ -292,6 +292,7 @@ a { color: var(--vert-mambo); }
 .site-footer nav a { color: var(--blanc); text-decoration: none; font-weight: 600; }
 .site-footer nav a:hover { text-decoration: underline; }
 .copyright { width: 100%; margin: 16px 0 0; font-size: .9rem; color: rgba(255,255,255,.7); }
+.copyright a { color: inherit; }
 
 /* Actualités */
 .section-head {
