@@ -6,7 +6,7 @@ resume: Le groupe ouvre mambogroup-rdc.com pour présenter ses activités, ses m
 
 MAMBO GROUP met en ligne son site internet, **mambogroup-rdc.com**.
 
-Vous y trouvez une présentation du groupe et de ses métiers : production, conditionnement, soufflage de bouteilles, trading et logistique agroalimentaires. Le site présente aussi nos marques d'eau minéralisée, Aqua Conso et Rozana.
+Vous y trouvez une présentation du groupe et de ses métiers : production, conditionnement, soufflage de bouteilles, trading et logistique agroalimentaires. Le site présente aussi nos marques d'eau minéralisée, Conso-Aqua et Rozana.
 
 Le site adopte la nouvelle identité visuelle du groupe, en vert, couleur de l'agroalimentaire et de la croissance. Elle accompagnera la diversification de MAMBO GROUP vers de nouvelles filières.
 
