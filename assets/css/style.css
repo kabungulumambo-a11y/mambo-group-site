@@ -185,6 +185,14 @@ a { color: var(--vert-mambo); }
   padding-top: 20px;
 }
 .value p { margin: 0; }
+.group-banner {
+  display: block; width: 100%; height: auto;
+  margin-top: 32px; border-radius: var(--radius);
+}
+.value-media {
+  display: block; width: 100%; aspect-ratio: 3 / 1; object-fit: cover;
+  border-radius: var(--radius); margin-bottom: 16px;
+}
 
 .cards {
   display: grid;
