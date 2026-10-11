@@ -28,7 +28,7 @@ window.addEventListener('scroll', ombre, { passive: true });
 if ('IntersectionObserver' in window) {
   document.documentElement.classList.add('js');
   const blocs = document.querySelectorAll(
-    '.section .label, .section h2, .section .intro, .value, .card, .brand-card, .news-card, .gallery-item, .contact-list li, .section-head .link-arrow'
+    '.section .label, .section h2, .section .intro, .value, .card, .brand-card, .news-card, .contact-list li, .section-head .link-arrow'
   );
   const observer = new IntersectionObserver((entrees) => {
     entrees.forEach((entree) => {

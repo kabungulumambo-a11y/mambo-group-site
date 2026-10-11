@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" role="img" aria-label="Échange de marchandises agroalimentaires">
+<rect width="400" height="225" fill="#E4EDD8"/><rect y="185" width="400" height="40" fill="#7BB13C" opacity=".5"/>
+<path d="M60 185v-50h90v50Z" fill="#5A3A22"/><path d="M60 135h90" stroke="#C9862B" stroke-width="6"/><g fill="#C9862B"><circle cx="78" cy="125" r="12"/><circle cx="104" cy="122" r="13"/><circle cx="131" cy="125" r="12"/></g>
+<path d="M250 185c0-40 8-60 22-62h36c14 2 22 22 22 62Z" fill="#F7F5EF" stroke="#5A3A22" stroke-width="3"/><path d="M270 123l10-12h20l10 12" fill="none" stroke="#5A3A22" stroke-width="3"/>
+<g fill="none" stroke="#1F5130" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M170 80h70l-18-18"/><path d="M240 120h-70l18 18"/></g>
+</svg>
